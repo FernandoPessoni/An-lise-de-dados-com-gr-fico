@@ -1,7 +1,5 @@
 import { getCSS, criarGrafico } from "./common.js"
 
-criarGrafico(data, layout)
-
 async function redesFavoritasMundo() {
   const url =
     "https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json";
@@ -39,7 +37,7 @@ async function redesFavoritasMundo() {
       },
     },
   };
-  
+
   const grafico = document.createElement('div');
 grafico.className = 'grafico';
 document.getElementById('graficos-container').appendChild(grafico);
@@ -48,3 +46,4 @@ Plotly.newPlot(grafico, data, layout);
 }
 
 redesFavoritasMundo();
+criarGrafico(data, layout)

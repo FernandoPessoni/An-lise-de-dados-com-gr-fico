@@ -26,5 +26,6 @@ async function visualizarInformacoesGlobais() {
     }
 
     visualizarInformacoesGlobais()
+    criarGrafico(data, layout)
 
     
